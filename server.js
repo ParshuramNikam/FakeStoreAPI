@@ -58,6 +58,12 @@ app.use("/api", userRoutes);
 app.use("/api", productRoutes);
 app.use("/api", cartRoutes);
 
+// for deployment :-
+if(process.env.NODE_ENV === "production"){
+	app.use(express.static('client/build'));
+	
+}
+
 app.listen(process.env.PORT, () => {
 	console.log(`listening on ${process.env.PORT}`);
 });

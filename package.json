@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "npm run server.js",
-    "dev": "nodemon run server.js"
+    "dev": "nodemon run server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [
     "node.js",
