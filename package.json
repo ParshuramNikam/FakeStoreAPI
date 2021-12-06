@@ -18,6 +18,7 @@
   "author": "Parshuram Nikam <parshunikam0612@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.0",
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.1",
     "cookies": "^0.8.0",
@@ -28,7 +29,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.6",
     "nanoid": "^3.1.25",
-    "nodemailer": "^6.7.1"
+    "nodemailer": "^6.7.1",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
